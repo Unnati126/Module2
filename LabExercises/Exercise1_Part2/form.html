@@ -1,0 +1,45 @@
+<html>
+  <head> </head>
+
+  <body>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <a href="/">Home</a>
+      </nav>
+    </header>
+
+    <main>
+      <form onsubmit="formOnSubmit(event)">
+        <div>
+          <label for="firstName">First name</label>
+          <input id="firstName" name="firstName" type="text" />
+        </div>
+        <div>
+          <div>
+            <label for="middleName">Middle name</label>
+            <input id="middleName" name="middleName" type="text" />
+          </div>
+          <div>
+          <label for="lastName">Last name</label>
+          <input id="lastName" name="lastName" type="text" />
+        </div>
+        <fieldset>
+          <legend>Choose your interests</legend>
+          <div>
+            <input type="checkbox" id="coding" name="interest" value="coding" />
+            <label for="coding">Coding</label>
+          </div>
+          <div>
+            <input type="checkbox" id="dance" name="interest" value="dance" />
+            <label for="dance">Dance</label>
+          </div>
+        </fieldset>
+        <input type="submit" />
+      </form>
+    </main>
+
+    <footer>Copyright &copy; 2024</footer>
+    <script src="form.js"></script>
+  </body>
+</html>
