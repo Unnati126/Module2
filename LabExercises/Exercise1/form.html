@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form div {
+            margin-bottom: 10px; 
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="form.html">Form</a>
+    </nav>
+
+    <h2>Form</h2>
+
+    <form method="POST" action="http://127.0.0.1:5500/form.html">
+
+        <div>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+        </div>
+        
+        <div>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+        </div>
+
+        <div>
+            <p>Select your favorite coding language:</p>
+            <label>
+                <input type="radio" name="coding-language" value="python"> Python
+            </label><br>
+            <label>
+                <input type="radio" name="coding-language" value="javascript"> JavaScript
+            </label><br>
+            <label>
+                <input type="radio" name="coding-language" value="java"> Java
+            </label>
+        </div>
+
+        <div>
+            <p>Select the types of vehicle you own:</p>
+            <label>
+                <input type="checkbox" name="vehicle" value="car"> Car
+            </label><br>
+            <label>
+                <input type="checkbox" name="vehicle" value="motorcycle"> Motorcycle
+            </label><br>
+            <label>
+                <input type="checkbox" name="vehicle" value="bicycle"> Bicycle
+            </label>
+        </div>
+
+        <div>
+            <label for="car-brand">Choose your car brand:</label>
+            <select id="car-brand" name="car-brand">
+                <option value="toyota">Toyota</option>
+                <option value="kia">Kia</option>
+                <option value="ford">Ford</option>
+                <option value="bmw">BMW</option>
+                <option value="tesla">Tesla</option>
+            </select>
+        </div>
+
+        <button type="submit">Submit Form</button>
+    </form>
+
+</body>
+</html>
