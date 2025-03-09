@@ -3,7 +3,7 @@ function formOnSubmit(e) {
     console.log("getData", getData());
     const formattedObj = getFormattedData(e);
     console.log("formattedObj", formattedObj);
-    
+  }
   
   function getFormattedData(e) {
     const formData = new FormData(e.target);
