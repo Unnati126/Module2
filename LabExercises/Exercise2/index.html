@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Emblema+One">
+</head>
+<meta charset="UTF-8" description="Form" keywords="Form" author="Unnati" viewport="width=>, initial-scale=1.0">
+
+<style>
+    div {
+        background-color: lightblue;
+        font-size: 15px;
+        width: 190px;
+        height: 40px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .container {
+            display: flex; 
+            justify-content: space-around; 
+            align-items: flex-start; 
+            margin-top: 20px;
+        }
+
+        .box {
+            width: 200px; 
+            height: 100px; 
+            padding: 10px; 
+            border: 3px solid black; 
+            background-color: lightblue; 
+            box-sizing: border-box; 
+            margin: 10px;
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center;
+        }
+
+    
+.outline-solid{
+        outline: 10px solid red;
+    }
+    
+
+.outline-dotted {
+    outline: 10px dotted green; 
+}
+
+.outline-double {
+    outline: 10px double blue; 
+}
+
+.outline-offset {
+    outline: 10px solid orange;
+    outline-offset: 5px; 
+}
+
+span {
+    background-color: lightgreen;
+    font-size: 15px;
+    width: 60px;
+    height: 10px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+}
+
+</style>
+
+<body>
+
+    <h1>Welcome to the Home Page</h1>
+
+    <div class="position-relative">
+        <h1>Welcome to the Home Page</h1>
+        <div class="position-absolute">I am absolutely positioned below the heading.</div>
+    </div>
+
+    <h1>HTML & CSS learning</h1>
+    <article>
+        <h1>HTML</h1>
+        <p>HTML is a markup language for creating web pages.</p>
+        
+        <h1>CSS</h1>
+        <p>CSS is a style sheet language for designing web pages.</p>
+
+        <h1>JavaScript</h1>
+        <p>JavaScript is a programming language for creating interactive web pages.</p>
+    </article>
+
+    <h2>Understanding HTML Elements</h2> 
+
+    <article>
+        <h2>Learning Elements - div, span, p, pre, ul, li, ol, article</h2> 
+        <p>In this section, we will explore different HTML elements and their usage...</p>
+    </article>
+
+    <article>
+        <h2>Understanding Semantic Elements - header, section, aside, footer</h2> 
+        <p>This section focuses on semantic HTML elements that enhance the structure and meaning of a webpage...</p>
+    </article>
+
+    <article>
+        <h2>Exploring Forms and Inputs - form, input, textarea, button</h2> 
+                <p>Forms are essential for user interaction. This section covers different input fields and form elements...</p>
+    </article>
+
+<div class="my-descendants-are-styled" style="background-color: red;">
+    <p>This will have a red background.</p>
+    <div>
+        <p>This will also have a red background.</p>
+    </div>
+</div>
+
+<div class="my-children-are-styled" style="background-color: lightgreen;">
+    <p>This will have a lightgreen background.</p>
+    <div>
+        <p>This will NOT be styled because it's inside another div.</p>
+    </div>
+</div>
+
+<div class="box box-four">4-value syntax: margin and padding</div>
+<div class="box box-two">2-value syntax: margin and padding</div>
+<div class="box box-one">1-value syntax: margin and padding</div>
+<div class="box box-units">Using em and % for margin and padding</div>
+
+<div class="box-px">Box 1: Fixed (px)</div>
+
+<div class="box-rem">Box 2: Responsive (rem)</div>
+
+<div class="box-vw-vh">Box 3: Viewport-based (vw & vh)</div>
+
+<div class="box-vw-vh force-css" style="height: 200px;">
+    Box 4: Override with !important
+</div>
+
+<div class="box-solid">Box 5: Solid border</div>
+<div class="box-dashed">Box 6: Dashed border</div>
+<div class="box-double">Box 7: Double border</div>
+
+    <div class="box overflow-visible">
+        <p>Overflow: visible (content spills outside the box). This text exceeds the box and will overflow visibly.</p>
+    </div>
+
+    <div class="box overflow-hidden">
+        <p>Overflow: hidden (content is clipped and won't be visible outside the box).</p>
+    </div>
+
+    <div class="box overflow-scroll">
+        <p>Overflow: scroll (scrollbars are always shown, even if content fits). This text is very long and forces a scrollbar.</p>
+    </div>
+
+    <div class="box overflow-auto">
+        <p>Overflow: auto (scrollbars appear only if necessary). Resize the window to see the effect.</p>
+    </div>
+</div>
+
+<h2>CSS Outline Example</h2>
+
+    
+        <div class="box outline-solid">
+            Box with a solid red 10px outline.
+        </div>
+<br>
+        <div class="box outline-dotted">
+            Box with a dotted green 10px outline.
+        </div>
+<br>
+        <div class="box outline-double">
+            Box with a double blue 10px outline.
+        </div>
+<br>
+        <div class="box outline-offset">
+            Box with an orange outline and 5px offset.
+        </div>
+    </div>
+<br>
+    <div class="box"></div>
+
+    <div class="position-absolute">This is fixed at the top</div>
+    <div class="position-bottom">This is fixed at the bottom</div>
+
+<div class="position-relative">
+    <div class="position-absolute">I am absolutely positioned within a relative container.</div>
+</div>
+
+<div class="position-sticky">I am a sticky element!</div>
+
+<div class="article-container">
+    <h1>Welcome to the Article</h1>
+    <p>Scroll down to see the sticky element in action.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+</div>
+
+<div class="text-style">
+    This is a styled text example.
+</div>
+
+<div>
+    <a href="https://www.example.com" target="_blank">Visit Example</a>
+</div>
+
+<h1>Styled Links Example</h1>
+    <p>Visit <a href="https://www.example.com">Example Website</a></p>
+    <p>Check out <a href="https://www.google.com">Google</a></p>
+
+<h1>Interactive Link Styling</h1>
+    <p>Explore <a href="https://www.example.com">Example Website</a></p>
+    <p>Search with <a href="https://www.google.com">Google</a></p>
+
+    <h1>CSS calc() Demonstration</h1>
+    <div class="calc-style">
+        This box uses <code>width: 100vw;</code> and may overflow the page.
+    </div>
+    <br>
+    <div class="calc-style calc-reduced">
+        This box uses <code>width: calc(100vw - 100px);</code> and fits within the screen.
+    </div>
+
+    <h1>Inline-Block Fixed Width Example</h1>
+    <div class="fixed-width-col">Column 1</div>
+    <div class="fixed-width-col">Column 2</div>
+    <div class="fixed-width-col">Column 3</div>
+
+    <h1>Fixed and Fluid Columns Side-by-Side</h1>
+    <div class="fixed-width-col">Fixed Width (350px)</div>
+    <div class="fluid-col">Fluid Width (Dynamic)</div>
+
+</body>
+</html>
